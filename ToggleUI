@@ -1,0 +1,83 @@
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle0 = Instance.new("Frame")
+Toggle0.Name = "Toggle0"
+Toggle0.Parent = ScreenGui
+Toggle0.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle0.BackgroundTransparency = 0.75
+Toggle0.Position = UDim2.new(0.05, 0, 0.01, 0)
+Toggle0.Size = UDim2.new(0, 85, 0, 85)
+
+local Toggle1_5 = Instance.new("Frame")
+Toggle1_5.Name = "Toggle"
+Toggle1_5.Parent = Toggle0
+Toggle1_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle1_5.BackgroundTransparency = 0.75
+Toggle1_5.Position = UDim2.new(0,0,0,0)
+Toggle1_5.Size = UDim2.new(0, 85, 0, 85)
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = Toggle0
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.BackgroundTransparency = 0.75
+Toggle.Position = UDim2.new(0, 0, 0, 0)
+Toggle.Size = UDim2.new(0, 85, 0, 85)
+Toggle.Font = Enum.Font.GothamBold
+Toggle.Text = "Toggle"
+Toggle.TextTransparency = 0.25
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 24.000
+Toggle.Draggable = false
+
+local Ui1 = Instance.new("UICorner",Toggle)
+Ui1.CornerRadius = UDim.new(0,10)
+
+local Ui2 = Instance.new("UIStroke",Toggle0)
+Ui2.Thickness = 3
+Ui2.Transparency = 0.5
+Ui2.Color = Color3.new(1,1,1)
+
+local Ui3 = Instance.new("UIStroke",Toggle1_5)
+Ui3.Thickness = 6
+Ui3.Transparency = 0.5
+Ui3.Color = Color3.new(0,0,0)
+
+local Ui4 = Instance.new("UICorner",Toggle0)
+Ui4.CornerRadius = UDim.new(0,10)
+
+local Ui5 = Instance.new("UICorner",Toggle1_5)
+Ui5.CornerRadius = UDim.new(0,10)
+
+Toggle.MouseButton1Click:connect(function()
+game:GetService("CoreGui").ScreenGui.Base.Visible = not game:GetService("CoreGui").ScreenGui.Base.Visible
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
